@@ -1,0 +1,4 @@
+build-dir/
+export/
+.flatpak-builder/
+io.itch.darltrash.sleepyhead.flatpak
