@@ -27,9 +27,3 @@ modules:
       - type: git
         url: https://github.com/darltrash/socks.git
         branch: main
-
-      - type: file
-        path: io.itch.darltrash.sleepyhead.desktop
-
-      - type: file
-        path: io.itch.darltrash.sleepyhead.svg
