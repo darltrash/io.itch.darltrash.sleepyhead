@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Sleepyhead
-Exec=/app/bin/io.itch.darltrash.sleepyhead
+Exec=io.itch.darltrash.sleepyhead
 Icon=io.itch.darltrash.sleepyhead
 Terminal=false
 Categories=Game;
