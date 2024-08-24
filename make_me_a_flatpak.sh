@@ -4,7 +4,6 @@ BUILDER=flatpak-builder
 if ! command -v flatpak-builder &> /dev/null
 then
     BUILDER="flatpak run org.flatpak.Builder"
-    exit 1
 fi
 
 $BUILDER --user --install build-dir/ io.itch.darltrash.sleepyhead.json --force-clean
