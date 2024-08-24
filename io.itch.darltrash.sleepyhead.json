@@ -52,5 +52,5 @@
     }
   ],
 
-  "command": "/app/bin/io.itch.darltrash.sleepyhead"
+  "command": "io.itch.darltrash.sleepyhead"
 }
