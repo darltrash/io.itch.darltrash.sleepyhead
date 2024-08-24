@@ -6,5 +6,5 @@ then
     BUILDER="flatpak run org.flatpak.Builder"
 fi
 
-$BUILDER --user --force-clean --repo export build-dir io.itch.darltrash.sleepyhead.json 
+$BUILDER --user --force-clean --repo export build-dir io.itch.darltrash.sleepyhead.yml
 flatpak build-bundle export io.itch.darltrash.sleepyhead.flatpak io.itch.darltrash.sleepyhead
