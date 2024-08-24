@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json
 
+# Credits to naipotato! She's an actual genius
+
 id: io.itch.darltrash.sleepyhead
 command: io.itch.darltrash.sleepyhead
 
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 
 finish-args:
@@ -19,13 +21,7 @@ modules:
 
     buildsystem: simple
     build-commands:
-      - make MODE=RELEASE build
-
-      - install -D socks /app/bin/io.itch.darltrash.sleepyhead
-      - cp -r package /app/bin
-
-      - install -D io.itch.darltrash.sleepyhead.desktop /app/share/applications/io.itch.darltrash.sleepyhead.desktop
-      - install -D io.itch.darltrash.sleepyhead.svg /app/share/icons/io.itch.darltrash.sleepyhead.svg
+      - make MODE=RELEASE PREFIX=/app install
 
     sources:
       - type: git
